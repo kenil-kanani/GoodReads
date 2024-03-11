@@ -1,13 +1,12 @@
 import './App.css';
 
-import Home from 'Pages/Home';
+import MainRoutes from 'Routes/MainRoutes';
 
 function App() {
 
   return (
     <>
-      Kenil
-      <Home />
+      <MainRoutes />
     </>
   );
 }
