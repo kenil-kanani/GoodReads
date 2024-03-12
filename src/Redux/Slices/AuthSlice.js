@@ -44,7 +44,12 @@ const authSlice = createSlice({
     name: "auth",
     initialState,
     reducers: {
-
+        logout: (state) => {
+            state.isLoggedIn = false;
+            state.token = '';
+            state.username = '';
+            localStorage.clear();
+        }
     },
     extraReducers: (builder) => {
         builder.addCase(signin.fulfilled, (state, action) => {
@@ -59,5 +64,7 @@ const authSlice = createSlice({
         });
     }
 });
+
+export const { logout } = authSlice.actions;
 
 export default authSlice.reducer;
