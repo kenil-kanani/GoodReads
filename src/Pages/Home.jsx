@@ -25,7 +25,7 @@ const Home = () => {
                             Register
                         </button>
                     </Link>
-                    <Link to={'/login'}>
+                    <Link to={'/signin'}>
                         <button className='btn btn-warning rounded-md text-xl px-5 py-2 ml-3'>
                             Login
                         </button>
